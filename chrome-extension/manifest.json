@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "PodMatch Scraper",
+  "version": "1.0",
+  "description": "Scrapes guest data from PodMatch",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://app.podmatch.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
